@@ -1,8 +1,8 @@
 * 
 {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
 }
 /* main * 
 {
@@ -14,6 +14,11 @@ body, html
     padding: 0;
     overflow: hidden;
     height: 100%;
+    font-family: sans-serif;
+}
+span 
+{
+    color: orange;
 }
 main
 {
@@ -28,11 +33,13 @@ main
 {
     width: 40rem;
     position: absolute;
+    object-fit: contain;
 }
 .main-down
 {
     right: 0;
     bottom: -50%;
+
 }
 .main-top
 {
@@ -43,11 +50,12 @@ main
 {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 .target 
 {
     background-color: #fff;
-    width: 80%;
+    width: 20rem;
     height: 80vh;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -92,11 +100,11 @@ main
 }
 .target-up
 {
-    width: 13rem;
+    width: 60%;
     height: 35%;
     position: absolute;
     bottom: 50%;
-    left: 24%;
+    left: 20%;
     border-radius: 50%;
     border: 4px solid orangered;
     display: flex;
@@ -134,4 +142,10 @@ main
 {
     width: 100%;
     height: 100%;
+}
+@media screen and (max-width: 500px) {
+    .main-img 
+    {
+        display: none;
+    }
 }
